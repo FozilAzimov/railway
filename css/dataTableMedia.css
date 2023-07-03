@@ -1,0 +1,297 @@
+.dataTables_wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: 5001px) {
+  .dataTables_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 5000px) {
+  .dataTables_wrapper {
+    width: 4600px;
+  }
+}
+
+@media (max-width: 4900px) {
+  .dataTables_wrapper {
+    width: 4500px;
+  }
+}
+
+@media (max-width: 4800px) {
+  .dataTables_wrapper {
+    width: 4400px;
+  }
+}
+
+@media (max-width: 4700px) {
+  .dataTables_wrapper {
+    width: 4300px;
+  }
+}
+
+@media (max-width: 4600px) {
+  .dataTables_wrapper {
+    width: 4200px;
+  }
+}
+
+@media (max-width: 4500px) {
+  .dataTables_wrapper {
+    width: 4100px;
+  }
+}
+
+@media (max-width: 4400px) {
+  .dataTables_wrapper {
+    width: 4000px;
+  }
+}
+
+@media (max-width: 4300px) {
+  .dataTables_wrapper {
+    width: 3900px;
+  }
+}
+
+@media (max-width: 4200px) {
+  .dataTables_wrapper {
+    width: 3800px;
+  }
+}
+
+@media (max-width: 4100px) {
+  .dataTables_wrapper {
+    width: 3700px;
+  }
+}
+
+@media (max-width: 4000px) {
+  .dataTables_wrapper {
+    width: 3600px;
+  }
+}
+
+@media (max-width: 3900px) {
+  .dataTables_wrapper {
+    width: 3500px;
+  }
+}
+
+@media (max-width: 3800px) {
+  .dataTables_wrapper {
+    width: 3400px;
+  }
+}
+
+@media (max-width: 3700px) {
+  .dataTables_wrapper {
+    width: 3300px;
+  }
+}
+
+@media (max-width: 3600px) {
+  .dataTables_wrapper {
+    width: 3200px;
+  }
+}
+
+@media (max-width: 3500px) {
+  .dataTables_wrapper {
+    width: 3100px;
+  }
+}
+
+@media (max-width: 3400px) {
+  .dataTables_wrapper {
+    width: 3000px;
+  }
+}
+
+@media (max-width: 3300px) {
+  .dataTables_wrapper {
+    width: 2900px;
+  }
+}
+
+@media (max-width: 3200px) {
+  .dataTables_wrapper {
+    width: 2800px;
+  }
+}
+
+@media (max-width: 3100px) {
+  .dataTables_wrapper {
+    width: 2700px;
+  }
+}
+
+@media (max-width: 3000px) {
+  .dataTables_wrapper {
+    width: 2600px;
+  }
+}
+
+@media (max-width: 2900px) {
+  .dataTables_wrapper {
+    width: 2500px;
+  }
+}
+
+@media (max-width: 2800px) {
+  .dataTables_wrapper {
+    width: 2400px;
+  }
+}
+
+@media (max-width: 2700px) {
+  .dataTables_wrapper {
+    width: 2300px;
+  }
+}
+
+@media (max-width: 2600px) {
+  .dataTables_wrapper {
+    width: 2200px;
+  }
+}
+
+@media (max-width: 2500px) {
+  .dataTables_wrapper {
+    width: 2100px;
+  }
+}
+
+@media (max-width: 2400px) {
+  .dataTables_wrapper {
+    width: 2000px;
+  }
+}
+
+@media (max-width: 2300px) {
+  .dataTables_wrapper {
+    width: 1900px;
+  }
+}
+
+@media (max-width: 2200px) {
+  .dataTables_wrapper {
+    width: 1800px;
+  }
+}
+
+@media (max-width: 2100px) {
+  .dataTables_wrapper {
+    width: 1700px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .dataTables_wrapper {
+    width: 1600px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .dataTables_wrapper {
+    width: 1500px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .dataTables_wrapper {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .dataTables_wrapper {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .dataTables_wrapper {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .dataTables_wrapper {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .dataTables_wrapper {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .dataTables_wrapper {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dataTables_wrapper {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .dataTables_wrapper {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dataTables_wrapper {
+    width: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  .dataTables_wrapper {
+    width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dataTables_wrapper {
+    width: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  .dataTables_wrapper {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dataTables_wrapper {
+    width: 370px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dataTables_wrapper {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dataTables_wrapper {
+    width: 320px;
+  }
+}
+
+@media (max-width: 360px) {
+  .dataTables_wrapper {
+    width: 300px;
+  }
+}

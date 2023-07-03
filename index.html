@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Data Table v-1.13.4 -->
+  <link rel="stylesheet" href="./library/css/jquery.dataTables.min.css">
+
+  <!-- Bootstrap v-5 -->
+  <link rel="stylesheet" href="./library/css/bootstrap.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./library/fonts/font.css">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Header section -->
+    <div class="header">
+      <div class="d-flex align-items-center headerRow">
+
+        <div class="logo text-center">
+          <img src="./assets/imgs/logo.png" alt="LogoImg">
+        </div>
+
+        <div class="px-4 navigation">
+          <nav class="navbar navbar-expand">
+
+            <a class="navbar-brand" href="#">
+              <img class="headerMenu" src="./assets/icons/bars-solid.svg" alt="MenuIcon">
+            </a>
+
+            <select class="select">
+              <option value="uz">Uz</option>
+              <option value="ru">Ru</option>
+              <option value="en">En</option>
+            </select>
+
+            <ul class="navbar-nav ms-auto d-flex align-items-center gap-3 messages">
+              <li class="nav-item">
+                <a class="nav-link searchIcon" href="#">
+                  <img src="./assets/icons/magnifying-glass-solid.svg" alt="">
+                </a>
+                <div class="searchForm">
+                  <input type="text" class="form-control searchEnter" placeholder="Search & Enter">
+                  <img class="close" src="./assets/icons/xmark.svg" alt="xmark">
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="#">
+                  <img src="./assets/icons/envelope-solid.svg" alt="">
+                  <span class="position-absolute top-2 start-100 translate-middle p-1 bg-danger rounded-circle">
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="#">
+                  <img src="./assets/icons/bell-solid.svg" alt="">
+                  <span class="position-absolute top-2 start-100 translate-middle p-1 bg-danger rounded-circle">
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="#">
+                  <img src="./assets/icons/message-solid.svg" alt="">
+                  <span class="position-absolute top-2 start-100 translate-middle p-1 bg-danger rounded-circle">
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link userImg rounded-circle bg-white" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img class="settingsIcon" src="./assets/icons/gear-solid.svg" alt="">
+                </a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- subHeader section -->
+    <div class="d-flex align-items-center">
+      <div class="userData">
+        <img class="img" src="./assets/imgs/user-info.jpg" alt="useImg">
+        <div class="userCollapse d-flex align-items-center gap-3" data-bs-toggle="collapse" href="#userDataCollapse"
+          role="button" aria-expanded="false" aria-controls="userDataCollapse">
+          <ul class="navbar-nav ms-4 userProfileImg">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link userImg rounded-circle bg-white" href="#"></a>
+            </li>
+          </ul>
+          <div class="text-white">Juliya Brus</div>
+          <img class="right-angle ms-4 cursor-pointer userProfileHeight" src="./assets/icons/userDataIcon.svg"
+            alt="userProfileHeight" role="button">
+        </div>
+
+      </div>
+
+      <div class="subHeader w-100">
+        <div class="d-flex align-items-center subHeaderRow">
+          <div class="d-flex align-items-center userHeader px-4">
+            <div class="userName d-flex align-items-center gap-3">
+              <div class="title">Profile</div>
+              <div class="text mt-2">user name</div>
+            </div>
+
+            <div class="link ms-md-auto">
+              <ul class="d-flex align-items-center gap-2 m-0">
+                <li>
+                  <a class="nav-link m-0" href="#">
+                    <img class="miniIcon" src="./assets/icons/gauge-solid.svg" alt="Icon">
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link m-0 size" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link m-0" href="#">></a>
+                </li>
+                <li>
+                  <a class="nav-link m-0 size" href="#">Dashboard</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main section -->
+    <div class="main">
+      <div class="mainRow d-flex">
+
+        <div class="saidbar overflow-hidden">
+          <ul>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-1</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-2</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-3</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-4</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-5</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-6</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-7</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-8</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-9</a></li>
+            <li class="nav-item"><a class="nav-link my-3 fs-6" href="#">Navigation-10</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+
+          <div class="contentWrapper bg-white m-4">
+            <div class="title row w-100 m-0">
+              <div class="col-12 py-3 ps-4 fs-5 border-bottom">Content name</div>
+            </div>
+
+            <div class="p-3 w-100">
+
+              <p>hello</p>
+
+            </div>
+          </div>
+
+          <div class="contentWrapper bg-white m-4">
+            <div class="dataTable title2 pt-4">
+
+              <table id="example" class="stripe order-column nowrap" style="width: 100%;">
+                <thead>
+                  <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tiger</td>
+                    <td>Nixon</td>
+                    <td>System Architect</td>
+                    <td>Edinburgh</td>
+                    <td>61</td>
+
+                  </tr>
+                  <tr>
+                    <td>Garrett</td>
+                    <td>Winters</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>63</td>
+
+                  </tr>
+                  <tr>
+                    <td>Ashton</td>
+                    <td>Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                  </tr>
+                  <tr>
+                    <td>Cedric</td>
+                    <td>Kelly</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Airi</td>
+                    <td>Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                  </tr>
+                  <tr>
+                    <td>Brielle</td>
+                    <td>Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                  </tr>
+                  <tr>
+                    <td>Herrod</td>
+                    <td>Chandler</td>
+                    <td>Sales Assistant</td>
+                    <td>San Francisco</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>Rhona</td>
+                    <td>Davidson</td>
+                    <td>Integration Specialist</td>
+                    <td>Tokyo</td>
+                    <td>55</td>
+                  </tr>
+                  <tr>
+                    <td>Colleen</td>
+                    <td>Hurst</td>
+                    <td>Javascript Developer</td>
+                    <td>San Francisco</td>
+                    <td>39</td>
+                  </tr>
+                  <tr>
+                    <td>Sonya</td>
+                    <td>Frost</td>
+                    <td>Software Engineer</td>
+                    <td>Edinburgh</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>Jena</td>
+                    <td>Gaines</td>
+                    <td>Office Manager</td>
+                    <td>London</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Quinn</td>
+                    <td>Flynn</td>
+                    <td>Support Lead</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>Charde</td>
+                    <td>Marshall</td>
+                    <td>Regional Director</td>
+                    <td>San Francisco</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>Haley</td>
+                    <td>Kennedy</td>
+                    <td>Senior Marketing Designer</td>
+                    <td>London</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <td>Tatyana</td>
+                    <td>Fitzpatrick</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>Michael</td>
+                    <td>Silva</td>
+                    <td>Marketing Designer</td>
+                    <td>London</td>
+                    <td>66</td>
+                  </tr>
+                  <tr>
+                    <td>Paul</td>
+                    <td>Byrd</td>
+                    <td>Chief Financial Officer (CFO)</td>
+                    <td>New York</td>
+                    <td>64</td>
+                  </tr>
+                  <tr>
+                    <td>Gloria</td>
+                    <td>Little</td>
+                    <td>Systems Administrator</td>
+                    <td>New York</td>
+                    <td>59</td>
+                  </tr>
+                  <tr>
+                    <td>Bradley</td>
+                    <td>Greer</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>41</td>
+                  </tr>
+                  <tr>
+                    <td>Dai</td>
+                    <td>Rios</td>
+                    <td>Personnel Lead</td>
+                    <td>Edinburgh</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>Jenette</td>
+                    <td>Caldwell</td>
+                    <td>Development Lead</td>
+                    <td>New York</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>Yuri</td>
+                    <td>Berry</td>
+                    <td>Chief Marketing Officer (CMO)</td>
+                    <td>New York</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <td>Caesar</td>
+                    <td>Vance</td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <td>Doris</td>
+                    <td>Wilder</td>
+                    <td>Sales Assistant</td>
+                    <td>Sydney</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>Angelica</td>
+                    <td>Ramos</td>
+                    <td>Chief Executive Officer (CEO)</td>
+                    <td>London</td>
+                    <td>47</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+
+          <footer class="mainFooter d-flex align-items-center justify-content-between px-4 bg-white">
+            <div>2020 - 2023 AO O'zbekiston temir yo'llari</div>
+            <div>FAQ</div>
+          </footer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="./library/js/jquery-3.7.0.js"></script>
+
+  <!-- Data Table v-1.13.4 -->
+  <script src="./library/js/jquery.daatTables.min.js"></script>
+  <script src="./library/js/dataTavles.fixedGeader.min.js"></script>
+
+  <!-- Bootstrap v-5 -->
+  <script src="./library/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
