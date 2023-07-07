@@ -15,8 +15,17 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="./library/fonts/font.css">
 
+  <!-- jQuery Date library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/themes/default.css"
+    integrity="sha512-x9ZSPqJJfUhtPuo+fw6331wHeC3vhDpNI3Iu4KC05zJrxx7MWYewaDaASGxAUgWyrwU50oFn6Xk0CrQnTSuoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/themes/default.date.css"
+    integrity="sha512-Ix4qjGzOeoBtc8sdu1i79G1Gxy6azm56P4z+KFl+po7kOtlKhYSJdquftaI4hj1USIahQuZq5xpg7WgRykDJPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Css -->
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -161,214 +170,257 @@
 
         <div class="content">
 
-          <div class="contentWrapper bg-white m-4">
-            <div class="title row w-100 m-0">
-              <div class="col-12 py-3 ps-4 fs-5 border-bottom">Content name</div>
+          <div class="parent">
+            <div class="contentWrapper bg-white m-4">
+              <div class="title row w-100 m-0">
+                <div class="col-12 py-3 ps-4 fs-5 border-bottom">Content name</div>
+              </div>
+
+              <div class="filter p-3 pt-3 w-100 d-flex justify-content-between">
+                <div class="lib_date d-flex gap-2">
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="refreshBtn">
+                    <button class="btn_search">Search</button>
+                    <button class="btn_refresh">
+                      <img src="./assets/icons/refresh.svg" alt="refresh">
+                    </button>
+                  </div>
+                </div>
+
+                <div class="yordamchi_filter d-flex gap-2">
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+                  <div class="date">
+                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
+                  </div>
+
+                </div>
+              </div>
             </div>
 
-            <div class="p-3 w-100">
+            <div class="contentWrapper bg-white m-4">
+              <div class="dataTable title2 pt-4">
 
-              <p>hello</p>
+                <table id="example" class="stripe order-column nowrap" style="width: 100%;">
+                  <thead>
+                    <tr>
+                      <th>First name</th>
+                      <th>Last name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tiger</td>
+                      <td>Nixon</td>
+                      <td>System Architect</td>
+                      <td>Edinburgh</td>
+                      <td>61</td>
 
-            </div>
-          </div>
+                    </tr>
+                    <tr>
+                      <td>Garrett</td>
+                      <td>Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
 
-          <div class="contentWrapper bg-white m-4">
-            <div class="dataTable title2 pt-4">
+                    </tr>
+                    <tr>
+                      <td>Ashton</td>
+                      <td>Cox</td>
+                      <td>Junior Technical Author</td>
+                      <td>San Francisco</td>
+                      <td>66</td>
+                    </tr>
+                    <tr>
+                      <td>Cedric</td>
+                      <td>Kelly</td>
+                      <td>Senior Javascript Developer</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>Airi</td>
+                      <td>Satou</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>33</td>
+                    </tr>
+                    <tr>
+                      <td>Brielle</td>
+                      <td>Williamson</td>
+                      <td>Integration Specialist</td>
+                      <td>New York</td>
+                      <td>61</td>
+                    </tr>
+                    <tr>
+                      <td>Herrod</td>
+                      <td>Chandler</td>
+                      <td>Sales Assistant</td>
+                      <td>San Francisco</td>
+                      <td>59</td>
+                    </tr>
+                    <tr>
+                      <td>Rhona</td>
+                      <td>Davidson</td>
+                      <td>Integration Specialist</td>
+                      <td>Tokyo</td>
+                      <td>55</td>
+                    </tr>
+                    <tr>
+                      <td>Colleen</td>
+                      <td>Hurst</td>
+                      <td>Javascript Developer</td>
+                      <td>San Francisco</td>
+                      <td>39</td>
+                    </tr>
+                    <tr>
+                      <td>Sonya</td>
+                      <td>Frost</td>
+                      <td>Software Engineer</td>
+                      <td>Edinburgh</td>
+                      <td>23</td>
+                    </tr>
+                    <tr>
+                      <td>Jena</td>
+                      <td>Gaines</td>
+                      <td>Office Manager</td>
+                      <td>London</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Quinn</td>
+                      <td>Flynn</td>
+                      <td>Support Lead</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>Charde</td>
+                      <td>Marshall</td>
+                      <td>Regional Director</td>
+                      <td>San Francisco</td>
+                      <td>36</td>
+                    </tr>
+                    <tr>
+                      <td>Haley</td>
+                      <td>Kennedy</td>
+                      <td>Senior Marketing Designer</td>
+                      <td>London</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>Tatyana</td>
+                      <td>Fitzpatrick</td>
+                      <td>Regional Director</td>
+                      <td>London</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>Michael</td>
+                      <td>Silva</td>
+                      <td>Marketing Designer</td>
+                      <td>London</td>
+                      <td>66</td>
+                    </tr>
+                    <tr>
+                      <td>Paul</td>
+                      <td>Byrd</td>
+                      <td>Chief Financial Officer (CFO)</td>
+                      <td>New York</td>
+                      <td>64</td>
+                    </tr>
+                    <tr>
+                      <td>Gloria</td>
+                      <td>Little</td>
+                      <td>Systems Administrator</td>
+                      <td>New York</td>
+                      <td>59</td>
+                    </tr>
+                    <tr>
+                      <td>Bradley</td>
+                      <td>Greer</td>
+                      <td>Software Engineer</td>
+                      <td>London</td>
+                      <td>41</td>
+                    </tr>
+                    <tr>
+                      <td>Dai</td>
+                      <td>Rios</td>
+                      <td>Personnel Lead</td>
+                      <td>Edinburgh</td>
+                      <td>35</td>
+                    </tr>
+                    <tr>
+                      <td>Jenette</td>
+                      <td>Caldwell</td>
+                      <td>Development Lead</td>
+                      <td>New York</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Yuri</td>
+                      <td>Berry</td>
+                      <td>Chief Marketing Officer (CMO)</td>
+                      <td>New York</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>Caesar</td>
+                      <td>Vance</td>
+                      <td>Pre-Sales Support</td>
+                      <td>New York</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>Doris</td>
+                      <td>Wilder</td>
+                      <td>Sales Assistant</td>
+                      <td>Sydney</td>
+                      <td>23</td>
+                    </tr>
+                    <tr>
+                      <td>Angelica</td>
+                      <td>Ramos</td>
+                      <td>Chief Executive Officer (CEO)</td>
+                      <td>London</td>
+                      <td>47</td>
+                    </tr>
+                  </tbody>
+                </table>
 
-              <table id="example" class="stripe order-column nowrap" style="width: 100%;">
-                <thead>
-                  <tr>
-                    <th>First name</th>
-                    <th>Last name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Tiger</td>
-                    <td>Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-
-                  </tr>
-                  <tr>
-                    <td>Garrett</td>
-                    <td>Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-
-                  </tr>
-                  <tr>
-                    <td>Ashton</td>
-                    <td>Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                  </tr>
-                  <tr>
-                    <td>Cedric</td>
-                    <td>Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                  </tr>
-                  <tr>
-                    <td>Airi</td>
-                    <td>Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                  </tr>
-                  <tr>
-                    <td>Brielle</td>
-                    <td>Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>61</td>
-                  </tr>
-                  <tr>
-                    <td>Herrod</td>
-                    <td>Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>59</td>
-                  </tr>
-                  <tr>
-                    <td>Rhona</td>
-                    <td>Davidson</td>
-                    <td>Integration Specialist</td>
-                    <td>Tokyo</td>
-                    <td>55</td>
-                  </tr>
-                  <tr>
-                    <td>Colleen</td>
-                    <td>Hurst</td>
-                    <td>Javascript Developer</td>
-                    <td>San Francisco</td>
-                    <td>39</td>
-                  </tr>
-                  <tr>
-                    <td>Sonya</td>
-                    <td>Frost</td>
-                    <td>Software Engineer</td>
-                    <td>Edinburgh</td>
-                    <td>23</td>
-                  </tr>
-                  <tr>
-                    <td>Jena</td>
-                    <td>Gaines</td>
-                    <td>Office Manager</td>
-                    <td>London</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>Quinn</td>
-                    <td>Flynn</td>
-                    <td>Support Lead</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                  </tr>
-                  <tr>
-                    <td>Charde</td>
-                    <td>Marshall</td>
-                    <td>Regional Director</td>
-                    <td>San Francisco</td>
-                    <td>36</td>
-                  </tr>
-                  <tr>
-                    <td>Haley</td>
-                    <td>Kennedy</td>
-                    <td>Senior Marketing Designer</td>
-                    <td>London</td>
-                    <td>43</td>
-                  </tr>
-                  <tr>
-                    <td>Tatyana</td>
-                    <td>Fitzpatrick</td>
-                    <td>Regional Director</td>
-                    <td>London</td>
-                    <td>19</td>
-                  </tr>
-                  <tr>
-                    <td>Michael</td>
-                    <td>Silva</td>
-                    <td>Marketing Designer</td>
-                    <td>London</td>
-                    <td>66</td>
-                  </tr>
-                  <tr>
-                    <td>Paul</td>
-                    <td>Byrd</td>
-                    <td>Chief Financial Officer (CFO)</td>
-                    <td>New York</td>
-                    <td>64</td>
-                  </tr>
-                  <tr>
-                    <td>Gloria</td>
-                    <td>Little</td>
-                    <td>Systems Administrator</td>
-                    <td>New York</td>
-                    <td>59</td>
-                  </tr>
-                  <tr>
-                    <td>Bradley</td>
-                    <td>Greer</td>
-                    <td>Software Engineer</td>
-                    <td>London</td>
-                    <td>41</td>
-                  </tr>
-                  <tr>
-                    <td>Dai</td>
-                    <td>Rios</td>
-                    <td>Personnel Lead</td>
-                    <td>Edinburgh</td>
-                    <td>35</td>
-                  </tr>
-                  <tr>
-                    <td>Jenette</td>
-                    <td>Caldwell</td>
-                    <td>Development Lead</td>
-                    <td>New York</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>Yuri</td>
-                    <td>Berry</td>
-                    <td>Chief Marketing Officer (CMO)</td>
-                    <td>New York</td>
-                    <td>40</td>
-                  </tr>
-                  <tr>
-                    <td>Caesar</td>
-                    <td>Vance</td>
-                    <td>Pre-Sales Support</td>
-                    <td>New York</td>
-                    <td>21</td>
-                  </tr>
-                  <tr>
-                    <td>Doris</td>
-                    <td>Wilder</td>
-                    <td>Sales Assistant</td>
-                    <td>Sydney</td>
-                    <td>23</td>
-                  </tr>
-                  <tr>
-                    <td>Angelica</td>
-                    <td>Ramos</td>
-                    <td>Chief Executive Officer (CEO)</td>
-                    <td>London</td>
-                    <td>47</td>
-                  </tr>
-                </tbody>
-              </table>
+              </div>
 
             </div>
-
           </div>
 
           <footer class="mainFooter d-flex align-items-center justify-content-between px-4 bg-white">
@@ -400,8 +452,17 @@
   <!-- Bootstrap v-5 -->
   <script src="./library/js/bootstrap.bundle.min.js"></script>
 
+  <!-- jQuery Date library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/picker.js"
+    integrity="sha512-VQa5Pmc87GQrifaBaI+ejCQBHkca6yhwKH+iFihubE4Mf3NSj0jVN3cppGHPlFSa2MRmAD7xwuZ8fr9DOHUsgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/picker.date.js"
+    integrity="sha512-4UAypxd5+OVqRf2SeJTnkd+W47HoLnpHjwannVikXGsgJxH2Hl+SBDM9UYyi+3hpNc16aaGeOu5RvesbSwlRlA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- JS -->
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>

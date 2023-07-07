@@ -9,6 +9,8 @@ $(document).ready(function () {
     }
   });
 
+  $('.datepicker').pickadate();
+
 
   function MaximumWidthAction () {
     var logo = $('.logo');
@@ -115,5 +117,13 @@ $(document).ready(function () {
     var searchForm = $('.searchForm');
     searchForm.removeClass('block');
   });
+
+  $('.btn_refresh').click(function () {
+    var refreshBtn = $('.btn_refresh>img');
+    refreshBtn.addClass('ref');
+    setTimeout(() => {
+      $('.btn_refresh>img').removeClass('ref');
+    }, 500);
+  })
 
 });

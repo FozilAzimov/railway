@@ -281,6 +281,85 @@ table.dataTable tbody td {
 }
 
 
+/* Main Date picker */
+
+.lib_date {
+  width: 610px;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.datepicker {
+  padding: 5px 10px;
+  width: 300px;
+}
+
+.date {
+  position: relative;
+}
+
+.calendar {
+  position: absolute;
+  width: 25px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.addSearch {
+  position: absolute;
+  width: 25px;
+  right: 5px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.refreshBtn {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+}
+
+.refreshBtn button {
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 2px;
+}
+
+.yordamchi_filter {
+  width: 920px;
+  flex-wrap: wrap;
+}
+
+.btn_search {
+  background: rgba(0, 141, 197, 0.8);
+  border: 1px solid rgb(0, 93, 130);
+  color: #fff;
+}
+
+.btn_search:hover {
+  background: rgba(0, 141, 197);
+}
+
+.btn_refresh {
+  background: rgb(239 0 0);
+  color: #fff;
+  border: 1px solid #a30000;
+}
+
+.btn_refresh:hover {
+  background: rgb(219, 0, 0);
+}
+
+.btn_refresh>img {
+  width: 20px;
+}
+
+.ref {
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
 /* Main Footer */
 
 .mainFooter {
@@ -319,8 +398,86 @@ table.dataTable tbody td {
 
 
 
+@media (min-width: 2301px) {
+  .filter {
+    display: flex;
+    justify-content: space-evenly !important;
+  }
 
+  .addSearch {
+    top: 50%;
+  }
+}
 
+@media (max-width: 2300px) {
+  .addSearch {
+    top: 50%;
+  }
+}
+
+@media(min-width: 1901px) {
+  body {
+    height: 100vh;
+  }
+
+  .wrapper {
+    height: inherit;
+  }
+
+  .main {
+    height: inherit;
+  }
+
+  .content {
+    min-width: fit-content;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1900px) {
+  .yordamchi_filter {
+    width: 610px;
+    justify-content: end;
+  }
+
+  .calendar {
+    top: 30%;
+  }
+
+  .refreshBtn {
+    height: 40px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .yordamchi_filter {
+    width: 920px;
+    justify-content: end;
+  }
+
+  .lib_date {
+    width: fit-content;
+  }
+
+  .calendar {
+    top: 50%;
+  }
+
+  .refreshBtn {
+    height: 35px;
+  }
+}
 
 
 @media (max-width: 1400px) {
@@ -330,6 +487,24 @@ table.dataTable tbody td {
 
   .popUpWindow {
     width: 800px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .lib_date {
+    width: 610px;
+  }
+
+  .yordamchi_filter {
+    width: 610px;
+  }
+
+  .refreshBtn button {
+    padding: 4px 10px;
+  }
+
+  .filter {
+    gap: 10px;
   }
 }
 
@@ -360,6 +535,21 @@ table.dataTable tbody td {
 
   .close {
     right: 262px;
+  }
+
+  .lib_date {
+    width: 305px;
+    justify-content: center;
+  }
+
+  .yordamchi_filter {
+    width: 305px;
+  }
+
+  .refreshBtn {
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
   }
 }
 
@@ -444,6 +634,50 @@ table.dataTable tbody td {
 
   .select {
     display: none;
+  }
+
+  .lib_date {
+    width: 610px;
+    justify-content: end;
+  }
+
+  .yordamchi_filter {
+    width: 610px;
+  }
+
+  .refreshBtn button {
+    padding: 4px 10px;
+  }
+
+  .filter {
+    gap: 10px;
+  }
+
+  .refreshBtn {
+    width: fit-content;
+    padding: 0;
+  }
+
+  .filter input,
+  button {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 690px) {
+  .lib_date {
+    width: 305px;
+    justify-content: center;
+  }
+
+  .yordamchi_filter {
+    width: 305px;
+  }
+
+  .refreshBtn {
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
   }
 }
 
