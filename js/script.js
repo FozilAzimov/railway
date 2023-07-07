@@ -9,7 +9,15 @@ $(document).ready(function () {
     }
   });
 
-  $('.datepicker').pickadate();
+  $('.datepicker').pickadate({
+    format: 'dd/mm/yyyy',
+    monthsFull: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
+    weekdaysShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+    today: 'сегодня',
+    clear: 'удалить',
+    close: 'закрыть',
+    formatSubmit: 'yyyy/mm/dd'
+  });
 
 
   function MaximumWidthAction () {
@@ -124,6 +132,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $('.btn_refresh>img').removeClass('ref');
     }, 500);
-  })
+  });
+
 
 });
