@@ -173,26 +173,35 @@
           <div class="parent">
             <div class="contentWrapper bg-white m-4">
               <div class="title row w-100 m-0">
-                <div class="col-12 py-3 ps-4 fs-5 border-bottom">Content name</div>
+                <div class="col-12 py-3 ps-2 fs-5 border-bottom">Content name</div>
               </div>
 
-              <div class="filter">
-                <div class="date">
-                  <label class="label" for="Date_from">Date from:</label>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
-                    <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+              <div class="row">
+                <div class="col-9">
+                  <div class="filter">
+                    <div class="date">
+                      <label class="label" for="Date_from">Date from:</label>
+                      <div class="date">
+                        <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
+                        <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+                      </div>
+                    </div>
+                    <div class="date">
+                      <label class="label" for="Date_from">Date from:</label>
+                      <div class="date">
+                        <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
+                        <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+                      </div>
+                    </div>
+                    <button class="btn_refresh">Refresh <img src="./assets/icons/refresh.svg" alt="refresh"></button>
                   </div>
                 </div>
-                <div class="date">
-                  <label class="label" for="Date_from">Date from:</label>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
-                    <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+
+                <div class="col-3 d-flex justify-content-end">
+                  <div class="filter btn_bottom">
+                    <button class="btn_search">Qo'shimcha filter</button>
                   </div>
                 </div>
-                <button class="btn_refresh">Refresh <img src="./assets/icons/refresh.svg" alt="refresh"></button>
-                <button class="btn_search">Qo'shimcha filter</button>
               </div>
             </div>
 

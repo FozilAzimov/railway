@@ -131,7 +131,7 @@ $(document).ready(function () {
     refreshBtn.addClass('ref');
     setTimeout(() => {
       $('.btn_refresh>img').removeClass('ref');
-    }, 500);
+    }, 1600);
   });
 
 
