@@ -103,9 +103,9 @@
     <!-- subHeader section -->
     <div class="d-flex align-items-center">
       <div class="userData">
-        <img class="img" src="./assets/imgs/user-info.jpg" alt="useImg">
-        <div class="userCollapse d-flex align-items-center gap-3" data-bs-toggle="collapse" href="#userDataCollapse"
-          role="button" aria-expanded="false" aria-controls="userDataCollapse">
+        <div class="userCollapse d-flex align-items-center gap-3 position-relative" data-bs-toggle="collapse"
+          href="#userDataCollapse" role="button" aria-expanded="false" aria-controls="userDataCollapse">
+          <img class="position-absolute img" src="./assets/imgs/admin_img.jpg" alt="">
           <ul class="navbar-nav ms-4 userProfileImg">
             <li class="nav-item d-flex align-items-center">
               <a class="nav-link userImg rounded-circle bg-white" href="#"></a>
@@ -176,51 +176,23 @@
                 <div class="col-12 py-3 ps-4 fs-5 border-bottom">Content name</div>
               </div>
 
-              <div class="filter p-3 pt-3 w-100 d-flex justify-content-between">
-                <div class="lib_date d-flex gap-2">
+              <div class="filter">
+                <div class="date">
+                  <label class="label" for="Date_from">Date from:</label>
                   <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
                     <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
                   </div>
+                </div>
+                <div class="date">
+                  <label class="label" for="Date_from">Date from:</label>
                   <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
+                    <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
                     <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
                   </div>
-                  <div class="refreshBtn">
-                    <button class="btn_refresh">
-                      <img src="./assets/icons/refresh.svg" alt="refresh">
-                    </button>
-                    <button class="btn_search">Search</button>
-                  </div>
                 </div>
-
-                <div class="yordamchi_filter d-flex gap-2">
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-                  <div class="date">
-                    <input class="datepicker" type="text" placeholder="mm/dd/yyyy">
-                    <img class="addSearch" src="./assets/imgs/calendar.png" alt="calendar">
-                  </div>
-
-                </div>
+                <button class="btn_refresh">Refresh <img src="./assets/icons/refresh.svg" alt="refresh"></button>
+                <button class="btn_search">Qo'shimcha filter</button>
               </div>
             </div>
 
