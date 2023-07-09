@@ -134,5 +134,39 @@ $(document).ready(function () {
     }, 1600);
   });
 
+  $('.btn_search').click(function () {
+    $('.filter_modal').css({
+      display: 'block',
+    });
+
+    setTimeout(() => {
+      $('.modal_box').css({
+        top: '40%',
+      })
+    }, 100);
+  });
+
+  $('.close_btn>img').click(function () {
+    $('.modal_box').css({
+      top: '-40%',
+    });
+
+    setTimeout(() => {
+      $('.filter_modal').css({
+        display: 'none',
+      });
+    }, 800);
+  })
+
+
+
+
+
+
+
+
+
+
+
 
 });

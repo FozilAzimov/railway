@@ -286,8 +286,10 @@ table.dataTable tbody td {
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   align-items: end;
-  padding: 20px 10px;
+  padding: 40px 10px;
 }
 
 .date {
@@ -325,6 +327,12 @@ table.dataTable tbody td {
   border-radius: 2px;
 }
 
+.btn {
+  display: flex;
+  align-items: start;
+  margin-top: 15px;
+}
+
 .btn_search {
   background: rgb(0 142 244);
   color: #fff;
@@ -348,12 +356,53 @@ table.dataTable tbody td {
 }
 
 .btn_refresh>img {
-  width: 18px;
+  width: 15px;
 }
 
 .ref {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
   transition: 1.5s;
+}
+
+.filter_modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+}
+
+.modal_box {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  background: #fff;
+  left: 50%;
+  top: -30%;
+  transform: translate(-50%, -150px);
+  transition: 1s;
+  border-radius: 5px 5px 0 0;
+  border-top: 10px solid rgb(44 154 225);
+}
+
+.close_btn {
+  width: 100%;
+}
+
+.close_btn>img {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  cursor: pointer;
+  transition: .5s;
+  margin: 5px 5px 0 0;
+}
+
+.close_btn>img:hover {
+  transform: scale(1.1);
+  transition: .5s;
 }
 
 /* Main Footer */

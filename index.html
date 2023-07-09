@@ -187,7 +187,7 @@
                       </div>
                     </div>
                     <div class="date">
-                      <label class="label" for="Date_from">Date from:</label>
+                      <label class="label" for="Date_from">Date to:</label>
                       <div class="date">
                         <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
                         <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
@@ -198,8 +198,10 @@
                 </div>
 
                 <div class="col-3 d-flex justify-content-end">
-                  <div class="filter btn_bottom">
-                    <button class="btn_search">Qo'shimcha filter</button>
+                  <div class="filter btn">
+                    <div class="date me-0">
+                      <button class="btn_search">Qo'shimcha filter</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -415,8 +417,15 @@
 
     </div>
 
-  </div>
 
+  </div>
+  <div class="filter_modal">
+    <div class="modal_box">
+      <div class="close_btn">
+        <img src="./assets/icons/close-circle.svg" alt="Close">
+      </div>
+    </div>
+  </div>
 
 
 
