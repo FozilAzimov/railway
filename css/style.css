@@ -284,6 +284,12 @@ table.dataTable tbody td {
 
 /* Main Date picker */
 
+.filter_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -327,9 +333,11 @@ table.dataTable tbody td {
   border-radius: 2px;
 }
 
-.btn {
+.btn_wrapper {
+  width: fit-content !important;
   display: flex;
   align-items: start;
+  justify-content: end;
   margin-top: 15px;
 }
 
@@ -382,7 +390,7 @@ table.dataTable tbody td {
   left: 50%;
   top: -30%;
   transform: translate(-50%, -150px);
-  transition: 1s;
+  transition: .5s;
   border-radius: 5px 5px 0 0;
   border-top: 10px solid rgb(44 154 225);
 }
@@ -460,6 +468,28 @@ table.dataTable tbody td {
 
   .popUpWindow {
     width: 650px;
+  }
+}
+
+@media (max-width:1110px) {
+  .filter {
+    width: 540px;
+    justify-content: end;
+  }
+
+  .btn_refresh {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width:1010px) {
+  .filter {
+    width: 280px;
+    justify-content: end;
+  }
+
+  .btn_refresh {
+    margin-right: 40px;
   }
 }
 
@@ -565,6 +595,15 @@ table.dataTable tbody td {
   .select {
     display: none;
   }
+
+  .close_btn>img {
+    width: 30px;
+  }
+
+  .modal_box {
+    width: 96%;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width: 576px) {
@@ -584,6 +623,29 @@ table.dataTable tbody td {
 
   .close {
     right: 162px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 510px) {
+  .filter_wrapper {
+    justify-content: center;
+  }
+
+  .filter {
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .btn_wrapper {
+    justify-content: center;
+  }
+
+  .date {
+    margin-right: 0;
+  }
+
+  .btn_refresh {
+    margin-right: 0;
   }
 }
 

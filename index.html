@@ -176,32 +176,28 @@
                 <div class="col-12 py-3 ps-2 fs-5 border-bottom">Content name</div>
               </div>
 
-              <div class="row">
-                <div class="col-9">
-                  <div class="filter">
+              <div class="filter_wrapper">
+                <div class="filter">
+                  <div class="date">
+                    <label class="label" for="Date_from">Date from:</label>
                     <div class="date">
-                      <label class="label" for="Date_from">Date from:</label>
-                      <div class="date">
-                        <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
-                        <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
-                      </div>
+                      <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
+                      <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
                     </div>
-                    <div class="date">
-                      <label class="label" for="Date_from">Date to:</label>
-                      <div class="date">
-                        <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
-                        <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
-                      </div>
-                    </div>
-                    <button class="btn_refresh">Refresh <img src="./assets/icons/refresh.svg" alt="refresh"></button>
                   </div>
+                  <div class="date">
+                    <label class="label" for="Date_from">Date to:</label>
+                    <div class="date">
+                      <input class="datepicker" type="text" placeholder="dd/mm/yyyy" id="Date_from">
+                      <img class="calendar" src="./assets/imgs/calendar.png" alt="calendar">
+                    </div>
+                  </div>
+                  <button class="btn_refresh">Refresh <img src="./assets/icons/refresh.svg" alt="refresh"></button>
                 </div>
 
-                <div class="col-3 d-flex justify-content-end">
-                  <div class="filter btn">
-                    <div class="date me-0">
-                      <button class="btn_search">Qo'shimcha filter</button>
-                    </div>
+                <div class="filter btn_wrapper">
+                  <div class="date me-0">
+                    <button class="btn_search">Qo'shimcha filter</button>
                   </div>
                 </div>
               </div>

@@ -131,7 +131,7 @@ $(document).ready(function () {
     refreshBtn.addClass('ref');
     setTimeout(() => {
       $('.btn_refresh>img').removeClass('ref');
-    }, 1600);
+    }, 1400);
   });
 
   $('.btn_search').click(function () {
@@ -155,7 +155,7 @@ $(document).ready(function () {
       $('.filter_modal').css({
         display: 'none',
       });
-    }, 800);
+    }, 300);
   })
 
 
