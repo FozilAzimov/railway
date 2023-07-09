@@ -293,7 +293,7 @@ table.dataTable tbody td {
 .filter {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 15px;
   align-items: end;
   padding: 40px 10px;
 }
@@ -638,6 +638,7 @@ table.dataTable tbody td {
 
   .btn_wrapper {
     justify-content: center;
+    margin-top: 0;
   }
 
   .date {
