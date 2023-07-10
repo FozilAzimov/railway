@@ -137,6 +137,7 @@ ul {
   height: 71px;
   transition: .7s;
   overflow: hidden;
+  background: rgba(0, 0, 0, .3);
 }
 
 .userCollapse {
@@ -144,14 +145,9 @@ ul {
 }
 
 .img {
-  width: 260px;
-  height: 200px;
-  margin-top: 30px;
+  width: 253px;
+  height: 150px;
   z-index: -1;
-}
-
-.profileImg {
-  background-image: url('../assets/imgs/user-info.jpg');
 }
 
 .userHeader {
