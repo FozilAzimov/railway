@@ -431,6 +431,7 @@ table.dataTable tbody td {
   border: 1px solid rgb(44 154 225);
   border-radius: 3px;
   color: rgba(0, 0, 0, .7);
+  cursor: pointer;
 }
 
 .selects {
@@ -454,14 +455,26 @@ table.dataTable tbody td {
 }
 
 .btn_box>button {
-  border: none;
-  padding: 3px 15px;
-  transition: .5s;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+  transition: .3s;
+  background: #fff;
+  font-weight: 500;
 }
 
 .btn_box>button:hover {
-  transform: scale(1.1);
-  transition: .5s;
+  background: rgb(212, 230, 255);
+  border: 1px solid rgb(86, 159, 181);
+  transition: .3s;
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+}
+
+.clearBtn>img {
+  width: 18px;
 }
 
 /* Main Footer */

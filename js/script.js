@@ -158,9 +158,24 @@ $(document).ready(function () {
     }, 300);
   })
 
+  $('.getSubmit').click(function () {
+    $('.modal_box').css({
+      top: '-40%',
+    });
 
+    setTimeout(() => {
+      $('.filter_modal').css({
+        display: 'none',
+      });
+    }, 300);
+  })
 
-
+  $('.clearBtn').click(function () {
+    var selects = $('.filter_select');
+    Array.from(selects).forEach(item => {
+      item.selectedIndex = 0;
+    })
+  })
 
 
 
