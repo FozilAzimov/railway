@@ -392,7 +392,6 @@ table.dataTable tbody td {
   top: -30%;
   transform: translate(-50%, -150px);
   transition: .5s;
-  border-radius: 5px 5px 0 0;
   border-top: 30px solid rgb(60 149 208);
 }
 
@@ -428,6 +427,7 @@ table.dataTable tbody td {
   width: 220px;
   height: 25px;
   font-size: 13px;
+  outline: none;
   border: 1px solid rgb(44 154 225);
   border-radius: 3px;
   color: rgba(0, 0, 0, .7);
@@ -437,6 +437,31 @@ table.dataTable tbody td {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+}
+
+.filter_footer {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.btn_box {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.btn_box>button {
+  border: none;
+  padding: 3px 15px;
+  transition: .5s;
+}
+
+.btn_box>button:hover {
+  transform: scale(1.1);
+  transition: .5s;
 }
 
 /* Main Footer */
@@ -636,6 +661,14 @@ table.dataTable tbody td {
   }
 
   .selects {
+    margin-right: 0;
+  }
+
+  .filter_footer {
+    justify-content: center;
+  }
+
+  .btn_box {
     margin-right: 0;
   }
 }
