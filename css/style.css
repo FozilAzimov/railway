@@ -211,6 +211,11 @@ ul {
   color: #fff;
 }
 
+.saidbar .nav-item .nav-link img {
+  width: 20px;
+
+}
+
 .content {
   min-width: fit-content;
   max-width: 100%;
