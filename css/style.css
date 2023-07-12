@@ -204,8 +204,8 @@ ul {
 }
 
 .saidbar .nav-item {
-  padding: 12px 15px;
-  margin: 8px 0;
+  padding: 15px;
+  margin: 12px 0;
 }
 
 .active {
@@ -218,7 +218,8 @@ ul {
 }
 
 .saidbar .saidbar_title {
-  padding-left: 0;
+  padding: 12px 15px 4px 8px;
+  color: #afb7c3;
 }
 
 .saidbar .nav-item .nav-link {
@@ -227,6 +228,23 @@ ul {
 
 .saidbar .nav-item .nav-link:hover {
   color: #fff;
+}
+
+.nav-link>div>.icons>i {
+  font-size: 18px;
+}
+
+.icons {
+  width: 18px;
+}
+
+.min_icon {
+  font-size: 10px !important;
+  font-weight: 200;
+}
+
+.nav-link span {
+  font-size: 13px;
 }
 
 .content {

@@ -27,6 +27,7 @@ $(document).ready(function () {
     var userCollapse = $('.userCollapse');
     var saidbar = $('.saidbar');
     var userProfileImg = $('.userProfileImg');
+    var saidbar_title = $('.saidbar_title');
 
     headerMenu.click(() => {
       logo.toggleClass('toggle');
@@ -34,6 +35,7 @@ $(document).ready(function () {
       userCollapse.toggleClass('toggle');
       saidbar.toggleClass('toggle');
       userProfileImg.toggleClass('marginLeft');
+      saidbar_title.toggleClass('hidden');
     });
   }
 
@@ -41,10 +43,12 @@ $(document).ready(function () {
     var headerMenu = $('.headerMenu');
     var userData = $('.userData');
     var saidbar = $('.saidbar');
+    var saidbar_title = $('.saidbar_title');
 
     headerMenu.click(function () {
       userData.toggleClass('none');
       saidbar.toggleClass('none');
+      saidbar_title.toggleClass('hidden');
     });
   }
 
