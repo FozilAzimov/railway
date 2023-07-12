@@ -19,7 +19,6 @@ $(document).ready(function () {
     formatSubmit: 'yyyy/mm/dd'
   });
 
-
   function MaximumWidthAction () {
     var logo = $('.logo');
     var headerMenu = $('.headerMenu');
@@ -28,6 +27,7 @@ $(document).ready(function () {
     var saidbar = $('.saidbar');
     var userProfileImg = $('.userProfileImg');
     var saidbar_title = $('.saidbar_title');
+    var tek = true;
 
     headerMenu.click(() => {
       logo.toggleClass('toggle');
@@ -35,7 +35,8 @@ $(document).ready(function () {
       userCollapse.toggleClass('toggle');
       saidbar.toggleClass('toggle');
       userProfileImg.toggleClass('marginLeft');
-      saidbar_title.toggleClass('hidden');
+      tek ? (tek = false) : (tek = true);
+      !tek ? saidbar_title.hide(700) : saidbar_title.show(700);
     });
   }
 
@@ -57,7 +58,6 @@ $(document).ready(function () {
 
   laptopWidth > 768 ? (isBoolean = true) : (isBoolean = false);
   isBoolean ? MaximumWidthAction() : MinimumWidthAction();
-
 
   function sidebarClose () {
     function MaximumWidthAction () {
@@ -96,7 +96,6 @@ $(document).ready(function () {
   }
   $(window).resize(sidebarClose);
 
-
   function hideSidebar () {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -116,7 +115,6 @@ $(document).ready(function () {
     }
   }
   $(window).resize(hideSidebar);
-
 
   var SearchIcon = $('.searchIcon');
   SearchIcon.click(function () {
@@ -180,9 +178,6 @@ $(document).ready(function () {
       item.selectedIndex = 0;
     })
   })
-
-
-
 
 
 
