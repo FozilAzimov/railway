@@ -203,17 +203,30 @@ ul {
   transition: .7s;
 }
 
+.saidbar .nav-item {
+  padding: 12px 15px;
+  margin: 8px 0;
+}
+
+.active {
+  background: rgb(44 154 225);
+  border-radius: 5px;
+}
+
+.saidbar .active .nav-link {
+  color: #fff !important;
+}
+
+.saidbar .saidbar_title {
+  padding-left: 0;
+}
+
 .saidbar .nav-item .nav-link {
   color: #afb7c3;
 }
 
 .saidbar .nav-item .nav-link:hover {
   color: #fff;
-}
-
-.saidbar .nav-item .nav-link img {
-  width: 20px;
-
 }
 
 .content {
