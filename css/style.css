@@ -203,6 +203,26 @@ ul {
   transition: .7s;
 }
 
+.hidePadding {
+  padding: 0 !important;
+  transition: .7s;
+}
+
+.borderRadius_none {
+  border-radius: 0 !important;
+  transition: .7s;
+}
+
+.nav_link_margin {
+  margin-left: 5px !important;
+  transition: .7s;
+}
+
+.margin_top {
+  margin-top: 0 !important;
+  transition: .7s;
+}
+
 .saidbar .nav-item {
   padding: 15px;
   margin: 12px 0;

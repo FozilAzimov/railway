@@ -28,6 +28,10 @@ $(document).ready(function () {
     var userProfileImg = $('.userProfileImg');
     var saidbar_title = $('.saidbar_title');
     var tek = true;
+    var saidbar_list = $('.saidbar_list');
+    var active_list = $('.saidbar .active');
+    var nav_link = $('.saidbar>.saidbar_list>li>a');
+    var second_list = $('.second_list');
 
     headerMenu.click(() => {
       logo.toggleClass('toggle');
@@ -36,7 +40,11 @@ $(document).ready(function () {
       saidbar.toggleClass('toggle');
       userProfileImg.toggleClass('marginLeft');
       tek ? (tek = false) : (tek = true);
-      !tek ? saidbar_title.hide(700) : saidbar_title.show(700);
+      tek ? saidbar_title.show(700) : saidbar_title.hide(700);
+      saidbar_list.toggleClass('hidePadding');
+      active_list.toggleClass('borderRadius_none');
+      nav_link.toggleClass('nav_link_margin');
+      second_list.toggleClass('margin_top');
     });
   }
 
@@ -45,11 +53,21 @@ $(document).ready(function () {
     var userData = $('.userData');
     var saidbar = $('.saidbar');
     var saidbar_title = $('.saidbar_title');
+    var tek = true;
+    var saidbar_list = $('.saidbar_list');
+    var active_list = $('.saidbar .active');
+    var nav_link = $('.saidbar>.saidbar_list>li>a');
+    var second_list = $('.second_list');
 
     headerMenu.click(function () {
       userData.toggleClass('none');
       saidbar.toggleClass('none');
-      saidbar_title.toggleClass('hidden');
+      tek ? (tek = false) : (tek = true);
+      !tek ? saidbar_title.hide(700) : saidbar_title.show(700);
+      saidbar_list.toggleClass('hidePadding');
+      active_list.toggleClass('borderRadius_none');
+      nav_link.toggleClass('nav_link_margin');
+      second_list.toggleClass('margin_top');
     });
   }
 
