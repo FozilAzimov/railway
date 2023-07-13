@@ -98,18 +98,22 @@ ul {
 }
 
 .searchForm {
-  display: none;
+  width: 0px;
 }
 
 .searchEnter {
   position: absolute;
-  width: 250px;
-  height: 30px;
+  width: 0px;
+  height: 0px;
   top: 14px;
   right: 250px;
   z-index: 100;
   border-radius: 50px;
   font-size: 14px;
+  display: none;
+  border: none;
+  outline: none;
+  padding-left: 15px;
 }
 
 .searchEnter::placeholder {
@@ -118,7 +122,7 @@ ul {
 
 .close {
   position: absolute;
-  width: 11px;
+  width: 0px;
   top: 22px;
   right: 260px;
   z-index: 200;

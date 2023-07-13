@@ -136,14 +136,53 @@ $(document).ready(function () {
 
   var SearchIcon = $('.searchIcon');
   SearchIcon.click(function () {
+    var searchEnter = $('.searchEnter');
     var searchForm = $('.searchForm');
-    searchForm.addClass('block');
+    var close = $('.close');
+    searchEnter.css({
+      display: 'block',
+    });
+    setTimeout(() => {
+      searchEnter.css({
+        height: '30px',
+        width: '250px',
+        transition: '.7s',
+      });
+      searchForm.css({
+        width: '250px',
+        transition: '.7s',
+      });
+      close.css({
+        width: '11px',
+        transition: '.7s',
+      })
+    }, 1);
   });
 
   var Close = $('.close');
   Close.click(function () {
+    var searchEnter = $('.searchEnter');
     var searchForm = $('.searchForm');
-    searchForm.removeClass('block');
+    var close = $('.close');
+
+    searchEnter.css({
+      height: '0px',
+      width: '0px',
+      transition: '.7s',
+    });
+    searchForm.css({
+      width: '0px',
+      transition: '.7s',
+    });
+    close.css({
+      width: '0px',
+      transition: '.7s',
+    });
+    setTimeout(() => {
+      searchEnter.css({
+        display: 'none',
+      });
+    }, 700);
   });
 
   $('.btn_refresh').click(function () {
