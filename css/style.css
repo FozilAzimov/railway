@@ -387,7 +387,6 @@ table.dataTable tbody td {
 
 .filter button {
   outline: none;
-  border-radius: 2px;
 }
 
 .btn_wrapper {
@@ -402,22 +401,53 @@ table.dataTable tbody td {
   background: rgb(0 142 244);
   color: #fff;
   border: none;
-  padding: 5px 20px;
 }
 
 .btn_search>img {
-  width: 18px;
+  width: 55px;
+  padding: 8px 20px;
 }
 
 .btn_search:hover {
   background: rgb(0, 112, 192);
 }
 
+.tooltip_box2,
+.tooltip_box1 {
+  display: none;
+}
+
+.tooltip_hover {
+  width: 80px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  background: rgb(219 230 237);
+  position: absolute;
+  right: 0px;
+  top: -35px;
+  z-index: 10;
+}
+
+.kubik {
+  width: 15px;
+  height: 15px;
+  background: rgb(219 230 237);
+  position: absolute;
+  right: 7px;
+  bottom: 40px;
+  transform: rotate(45deg);
+}
+
 .btn_refresh {
   background: rgb(232 0 0 / 65%);
   color: #fff;
   border: none;
-  padding: 3px 15px;
 }
 
 .btn_refresh:hover {
@@ -425,12 +455,39 @@ table.dataTable tbody td {
 }
 
 .btn_refresh>img {
-  width: 15px;
+  width: 53px;
+  padding: 5px 18px;
 }
 
 .ref {
   transform: rotate(360deg);
   transition: 1.5s;
+}
+
+.tooltip_hover1 {
+  width: 100px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  background: rgb(219 230 237);
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+}
+
+.kubik1 {
+  width: 15px;
+  height: 15px;
+  background: rgb(219 230 237);
+  position: absolute;
+  right: 40px;
+  bottom: 77px;
+  transform: rotate(45deg);
 }
 
 .filter_modal {
@@ -473,6 +530,11 @@ table.dataTable tbody td {
 .close_btn>img:hover {
   transform: scale(1.1);
   transition: .5s;
+}
+
+.modal_box_title {
+  padding: 10px 0 0 20px;
+  font-size: 20px;
 }
 
 .select_wrapper {
@@ -525,7 +587,7 @@ table.dataTable tbody td {
 
 .btn_box>button:hover {
   background: rgb(212, 230, 255);
-  border: 1px solid rgb(86, 159, 181);
+  border-radius: 5px;
   transition: .3s;
 }
 

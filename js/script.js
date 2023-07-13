@@ -205,6 +205,22 @@ $(document).ready(function () {
     }, 100);
   });
 
+  $('.btn_search>img').mouseenter(function () {
+    $('.tooltip_box2').show(400);
+  }).mouseout(function () {
+    $('.tooltip_box2').hide(400);
+  }).click(function () {
+    $('.tooltip_box2').hide(400);
+  })
+
+  $('.btn_refresh>img').mouseenter(function () {
+    $('.tooltip_box1').show(400);
+  }).mouseout(function () {
+    $('.tooltip_box1').hide(400);
+  }).click(function () {
+    $('.tooltip_box1').hide(400);
+  })
+
   $('.close_btn>img').click(function () {
     $('.modal_box').css({
       top: '-40%',
