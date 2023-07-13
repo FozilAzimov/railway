@@ -61,6 +61,7 @@ ul {
   border: 1px solid #fff;
   outline: none;
   transition: .5s;
+  cursor: pointer;
 }
 
 .select:hover {
@@ -367,6 +368,7 @@ table.dataTable tbody td {
   border: 1px solid #bed2e1;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
 }
 
 .datepicker::placeholder {
