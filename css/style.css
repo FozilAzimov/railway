@@ -439,8 +439,8 @@ table.dataTable tbody td {
   height: 15px;
   background: rgb(219 230 237);
   position: absolute;
-  right: 7px;
-  bottom: 40px;
+  right: 3px;
+  bottom: 41px;
   transform: rotate(45deg);
 }
 
@@ -476,7 +476,7 @@ table.dataTable tbody td {
   text-align: center;
   background: rgb(219 230 237);
   position: absolute;
-  top: 25px;
+  bottom: 40px;
   z-index: 10;
 }
 
@@ -485,8 +485,8 @@ table.dataTable tbody td {
   height: 15px;
   background: rgb(219 230 237);
   position: absolute;
-  right: 40px;
-  bottom: 77px;
+  right: 34px;
+  bottom: 37px;
   transform: rotate(45deg);
 }
 
