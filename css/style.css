@@ -246,6 +246,10 @@ ul {
   color: #afb7c3;
 }
 
+.saidbar .saidbar_title>span {
+  font-size: 12px;
+}
+
 .saidbar .nav-item .nav-link {
   color: #afb7c3;
   padding: 15px;
@@ -259,15 +263,16 @@ ul {
   color: rgb(44 154 225);
 }
 
-.nav-link>div>.icons>i {
-  font-size: 18px;
-}
-
 .icons {
   width: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.max_icon {
+  font-size: 18px !important;
+  font-weight: 200;
 }
 
 .min_icon {
