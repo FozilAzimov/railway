@@ -269,7 +269,7 @@ ul {
 }
 
 .nav-link span {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .content {
@@ -674,6 +674,10 @@ table.dataTable tbody td {
   .btn_refresh {
     margin-right: 40px;
   }
+
+  .kubik1 {
+    left: 4px;
+  }
 }
 
 @media (max-width:1010px) {
@@ -836,9 +840,10 @@ table.dataTable tbody td {
   }
 }
 
-@media (min-width: 300px) and (max-width: 510px) {
+@media (max-width: 510px) {
   .filter_wrapper {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .filter {
