@@ -264,9 +264,7 @@ $(document).ready(function () {
       this.children[0].children[0].children[1].classList.remove('icon_text_color');
       this.children[0].children[1].classList.remove('icon_text_color');
     }
-  }).click(function () {
-    $(this).setattr('active');
-  })
+  });
 
 
 
