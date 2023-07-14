@@ -246,10 +246,6 @@ ul {
   color: #afb7c3;
 }
 
-.saidbar .saidbar_title>span {
-  font-size: 12px;
-}
-
 .saidbar .nav-item .nav-link {
   color: #afb7c3;
   padding: 15px;
@@ -270,18 +266,13 @@ ul {
   align-items: center;
 }
 
-.max_icon {
-  font-size: 18px !important;
-  font-weight: 200;
-}
-
 .min_icon {
   font-size: 10px !important;
   font-weight: 200;
 }
 
-.nav-link span {
-  font-size: 12px;
+.saidbar_list span {
+  font-size: 13px;
 }
 
 .content {
