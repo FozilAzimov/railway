@@ -229,7 +229,6 @@ ul {
 }
 
 .saidbar .nav-item {
-  padding: 15px;
   margin: 12px 0;
 }
 
@@ -249,10 +248,15 @@ ul {
 
 .saidbar .nav-item .nav-link {
   color: #afb7c3;
+  padding: 15px;
 }
 
-.saidbar .nav-item .nav-link:hover {
+.icon_color {
   color: #fff;
+}
+
+.icon_text_color {
+  color: rgb(44 154 225);
 }
 
 .nav-link>div>.icons>i {

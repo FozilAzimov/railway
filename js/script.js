@@ -207,7 +207,7 @@ $(document).ready(function () {
 
   $('.btn_search>img').mouseenter(function () {
     $('.tooltip_box2').show(400);
-  }).mouseout(function () {
+  }).mouseleave(function () {
     $('.tooltip_box2').hide(400);
   }).click(function () {
     $('.tooltip_box2').hide(400);
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
   $('.btn_refresh>img').mouseenter(function () {
     $('.tooltip_box1').show(400);
-  }).mouseout(function () {
+  }).mouseleave(function () {
     $('.tooltip_box1').hide(400);
   }).click(function () {
     $('.tooltip_box1').hide(400);
@@ -243,16 +243,24 @@ $(document).ready(function () {
         display: 'none',
       });
     }, 300);
-  })
+  });
 
   $('.clearBtn').click(function () {
     var selects = $('.filter_select');
     Array.from(selects).forEach(item => {
       item.selectedIndex = 0;
     })
-  })
+  });
 
-
+  $('.saidbar_list a').mouseenter(function () {
+    this.children[0].children[0].children[0].classList.add('icon_color');
+    this.children[0].children[1].classList.add('icon_text_color');
+    this.children[1].classList.add('icon_text_color');
+  }).mouseleave(function () {
+    this.children[0].children[0].children[0].classList.remove('icon_color');
+    this.children[0].children[1].classList.remove('icon_text_color');
+    this.children[1].classList.remove('icon_text_color');
+  });
 
 
 
