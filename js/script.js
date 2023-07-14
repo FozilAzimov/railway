@@ -252,15 +252,21 @@ $(document).ready(function () {
     })
   });
 
-  $('.saidbar_list a').mouseenter(function () {
-    this.children[0].children[0].children[0].classList.add('icon_color');
-    this.children[0].children[1].classList.add('icon_text_color');
-    this.children[1].classList.add('icon_text_color');
+  $('.saidbar_list>.nav-item').mouseenter(function () {
+    if (!$(this).attr('class').includes('active')) {
+      this.children[0].children[0].children[0].classList.add('icon_color');
+      this.children[0].children[0].children[1].classList.add('icon_text_color');
+      this.children[0].children[1].classList.add('icon_text_color');
+    }
   }).mouseleave(function () {
-    this.children[0].children[0].children[0].classList.remove('icon_color');
-    this.children[0].children[1].classList.remove('icon_text_color');
-    this.children[1].classList.remove('icon_text_color');
-  });
+    if (!$(this).attr('class').includes('active')) {
+      this.children[0].children[0].children[0].classList.remove('icon_color');
+      this.children[0].children[0].children[1].classList.remove('icon_text_color');
+      this.children[0].children[1].classList.remove('icon_text_color');
+    }
+  }).click(function () {
+    $(this).setattr('active');
+  })
 
 
 
