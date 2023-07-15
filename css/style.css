@@ -213,11 +213,6 @@ ul {
   transition: .7s;
 }
 
-.borderRadius_none {
-  border-radius: 0 !important;
-  transition: .7s;
-}
-
 .nav_link_margin {
   margin-left: 5px !important;
   transition: .7s;
@@ -256,7 +251,11 @@ ul {
 }
 
 .icon_text_color {
-  color: rgb(44 154 225);
+  color: rgb(44, 154, 225);
+}
+
+.rotate_icon {
+  transform: rotate(90deg);
 }
 
 .icons {
