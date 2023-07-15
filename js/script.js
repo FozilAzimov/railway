@@ -264,7 +264,23 @@ $(document).ready(function () {
       this.children[0].children[0].children[1].classList.remove('icon_text_color');
       this.children[0].children[1].classList.remove('icon_text_color');
     }
+  }).click(function () {
+    var saidbar_list = $('.saidbar_list>.nav-item');
+    Array.from(saidbar_list).forEach(item => {
+      if ($(item).attr('class').includes('active')) {
+        $(item).removeClass('active');
+      }
+    });
+
+    $(this).addClass('active');
+    this.children[0].children[0].children[1].classList.remove('icon_text_color');
+    this.children[0].children[1].classList.remove('icon_text_color');
   });
+
+  $('.saidbar_list>.nav-item>.nav-link').click(function (e) {
+    e.preventDefault();
+  })
+
 
 
 
