@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* Header */
 
@@ -232,7 +236,7 @@ ul {
   border-radius: 5px;
 }
 
-.saidbar .active .nav-link {
+.saidbar .active {
   color: #fff !important;
 }
 
@@ -273,6 +277,34 @@ ul {
 .saidbar_list span {
   font-size: 13px;
 }
+
+.list_drop {
+  padding: 0;
+}
+
+.item_drop {
+  padding: 5px 0;
+}
+
+.drop_link {
+  color: #afb7c3;
+}
+
+.fa-circle {
+  padding-left: 19px;
+  font-size: 12px;
+}
+
+.drop_text {
+  padding-left: 23px;
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 .content {
   min-width: fit-content;
