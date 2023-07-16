@@ -281,9 +281,14 @@ $(document).ready(function () {
     var nav_item = $('.saidbar_list>.nav-item');
     var this_min_icon = $(this)[0].children[0].children[1];
     var min_icon = $('.min_icon');
+    var icons = $('.saidbar_list .icons');
+
     if (!$(this).attr('class').includes('active')) {
       Array.from(min_icon).forEach(item => {
         $(item).removeClass('rotate_icon');
+      });
+      Array.from(icons).forEach(item => {
+        $(item).removeClass('icon_color');
       });
     }
     this_min_icon.classList.toggle('rotate_icon');
