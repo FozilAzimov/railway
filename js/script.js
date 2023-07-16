@@ -27,7 +27,6 @@ $(document).ready(function () {
     var saidbar = $('.saidbar');
     var userProfileImg = $('.userProfileImg');
     var saidbar_title = $('.saidbar_title');
-    var tek = true;
     var saidbar_list = $('.saidbar_list');
     var nav_link = $('.saidbar>.saidbar_list>.nav-item>.nav-link');
     var second_list = $('.second_list');
@@ -38,8 +37,7 @@ $(document).ready(function () {
       userCollapse.toggleClass('toggle');
       saidbar.toggleClass('toggle');
       userProfileImg.toggleClass('marginLeft');
-      tek ? (tek = false) : (tek = true);
-      tek ? saidbar_title.show(700) : saidbar_title.hide(700);
+      saidbar_title.toggle(700);
       saidbar_list.toggleClass('hidePadding');
       Array.from(nav_link).forEach(item => {
         $(item).toggleClass('nav_link_margin');
@@ -53,7 +51,6 @@ $(document).ready(function () {
     var userData = $('.userData');
     var saidbar = $('.saidbar');
     var saidbar_title = $('.saidbar_title');
-    var tek = true;
     var saidbar_list = $('.saidbar_list');
     var nav_link = $('.saidbar>.saidbar_list>.nav-item>.nav-link');
     var second_list = $('.second_list');
@@ -61,8 +58,7 @@ $(document).ready(function () {
     headerMenu.click(function () {
       userData.toggleClass('none');
       saidbar.toggleClass('none');
-      tek ? (tek = false) : (tek = true);
-      !tek ? saidbar_title.hide(700) : saidbar_title.show(700);
+      saidbar_title.toggle(700);
       saidbar_list.toggleClass('hidePadding');
       nav_link.toggleClass('nav_link_margin');
       second_list.toggleClass('margin_top');
@@ -277,7 +273,6 @@ $(document).ready(function () {
       });
     }
     this.children[1].classList.toggle('rotate_icon');
-
     Array.from(nav_link).forEach(item => {
       if ($(item).attr('class').includes('active')) {
         $(item).removeClass('active');
@@ -286,6 +281,7 @@ $(document).ready(function () {
     $(this).addClass('active');
     this.children[0].children[1].classList.remove('icon_text_color');
     this.children[1].classList.remove('icon_text_color');
+    $(this).siblings().slideToggle(500);
   });
 
 

@@ -280,6 +280,7 @@ a {
 
 .list_drop {
   padding: 0;
+  display: none;
 }
 
 .item_drop {
