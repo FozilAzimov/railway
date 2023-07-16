@@ -255,7 +255,8 @@ ul {
 }
 
 .rotate_icon {
-  transform: rotate(90deg);
+  rotate: 90deg;
+  transition: all 0.7s;
 }
 
 .icons {
