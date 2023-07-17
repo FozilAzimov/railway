@@ -222,6 +222,11 @@ a {
   transition: .7s;
 }
 
+.borderRadius_none {
+  border-radius: 0 !important;
+  transition: .7s;
+}
+
 .margin_top {
   margin-top: 0 !important;
   transition: .7s;
