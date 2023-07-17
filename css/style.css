@@ -203,6 +203,10 @@ a {
   max-height: fit-content;
 }
 
+.mainRow_maxHeight {
+  height: 100vh;
+}
+
 .saidbar {
   min-width: 253px;
   max-width: 253px;

@@ -135,6 +135,14 @@ $(document).ready(function () {
   }
   $(window).resize(hideSidebar);
 
+  function windowInnerHeight () {
+    var mainRow = $('.mainRow');
+    window.innerHeight > 950
+      ? mainRow.addClass('mainRow_maxHeight')
+      : mainRow.removeClass('mainRow_maxHeight');
+  }
+  $(window).resize(windowInnerHeight);
+
   var SearchIcon = $('.searchIcon');
   SearchIcon.click(function () {
     var searchEnter = $('.searchEnter');
