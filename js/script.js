@@ -30,6 +30,8 @@ $(document).ready(function () {
     var saidbar_list = $('.saidbar_list');
     var nav_link = $('.saidbar>.saidbar_list>.nav-item>.nav-link');
     var second_list = $('.second_list');
+    var userCollapseText = $('.userCollapse>div');
+    var userProfileHeight = $('.userProfileHeight');
 
     headerMenu.click(() => {
       logo.toggleClass('toggle');
@@ -46,6 +48,8 @@ $(document).ready(function () {
         $(item).children().last().toggle(700);
       });
       second_list.toggleClass('margin_top');
+      userCollapseText.toggle(700);
+      userProfileHeight.toggle(700);
     });
   }
 

@@ -201,7 +201,6 @@ a {
 .mainRow {
   min-height: 82.2vh;
   max-height: fit-content;
-  height: 100%;
 }
 
 .saidbar {
@@ -314,6 +313,9 @@ a {
   min-width: fit-content;
   max-width: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contentWrapper {
