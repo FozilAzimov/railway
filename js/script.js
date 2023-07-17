@@ -262,6 +262,8 @@ $(document).ready(function () {
     var nav_link = $('.saidbar_list>.nav-item>.nav-link');
     var min_icon = $('.min_icon');
     var max_icon = $('.max_icon');
+    var isBooleanIcon = $(this).children().last();
+    var isBooleanMinIcon = $('.min_icon');
 
     event.preventDefault();
     if (!$(this).attr('class').includes('active')) {
@@ -281,7 +283,13 @@ $(document).ready(function () {
     $(this).addClass('active');
     this.children[0].children[1].classList.remove('icon_text_color');
     this.children[1].classList.remove('icon_text_color');
-    $(this).siblings().slideToggle(500);
+    isBooleanIcon.attr('class').includes('rotate_icon') ? $(this).siblings().slideDown(500) : $(this).siblings().slideUp(500);
+    Array.from(isBooleanMinIcon).forEach(item => {
+      if (!$(item).attr('class').includes('rotate_icon')) {
+        $(item).parent().siblings().slideUp(500);
+      }
+    })
+
   });
 
 

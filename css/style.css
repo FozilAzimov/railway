@@ -274,6 +274,10 @@ a {
   font-weight: 200;
 }
 
+.max_icon {
+  font-size: 17px;
+}
+
 .saidbar_list span {
   font-size: 13px;
 }
@@ -300,12 +304,6 @@ a {
   padding-left: 23px;
   text-decoration: none;
 }
-
-
-
-
-
-
 
 .content {
   min-width: fit-content;
