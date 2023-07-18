@@ -16,7 +16,13 @@ $(document).ready(function () {
     today: 'сегодня',
     clear: 'удалить',
     close: 'закрыть',
-    formatSubmit: 'yyyy/mm/dd'
+    formatSubmit: 'yyyy/mm/dd',
+    labelMonthNext: 'Go to the next month',
+    labelMonthPrev: 'Go to the previous month',
+    labelMonthSelect: 'Pick a month from the dropdown',
+    labelYearSelect: 'Pick a year from the dropdown',
+    selectMonths: true,
+    selectYears: true
   });
 
   function MaximumWidthAction () {
@@ -294,7 +300,6 @@ $(document).ready(function () {
       });
     }
     $(this).children().last().toggleClass('rotate_icon');
-    // this.children[1].classList.toggle('rotate_icon');
     Array.from(nav_link).forEach(item => {
       if ($(item).attr('class').includes('active')) {
         $(item).removeClass('active');

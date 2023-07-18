@@ -393,6 +393,11 @@ table.dataTable tbody td {
 
 /* Main Date picker */
 
+.picker__select--month,
+.picker__select--year {
+  padding: 0;
+}
+
 .filter_wrapper {
   display: flex;
   justify-content: space-between;
@@ -404,7 +409,7 @@ table.dataTable tbody td {
   flex-wrap: wrap;
   row-gap: 15px;
   align-items: end;
-  padding: 40px 10px;
+  padding: 20px 10px 40px 10px;
 }
 
 .date {
