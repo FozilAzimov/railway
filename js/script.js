@@ -304,7 +304,16 @@ $(document).ready(function () {
     $(this).children().first().children().last().removeClass('icon_text_color');
     $(this).children().last().removeClass('icon_text_color');
     isBooleanIcon.attr('class').includes('rotate_icon') ? $(this).siblings().slideDown(500) : $(this).siblings().slideUp(500);
+  });
 
+  var item_drop = $('.item_drop');
+  item_drop.click(function () {
+    Array.from($(this).parent().children()).forEach(item => {
+      if ($(item).children().attr('class').includes('icon_color')) {
+        $(item).children().removeClass('icon_color');
+      }
+      $(this).children().addClass('icon_color');
+    })
   });
 
 
