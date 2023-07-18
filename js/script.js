@@ -61,6 +61,8 @@ $(document).ready(function () {
     var saidbar_list = $('.saidbar_list');
     var nav_link = $('.saidbar>.saidbar_list>.nav-item>.nav-link');
     var second_list = $('.second_list');
+    var userCollapseText = $('.userCollapse>div');
+    var userProfileHeight = $('.userProfileHeight');
 
     headerMenu.click(function () {
       userData.toggleClass('none');
@@ -69,6 +71,8 @@ $(document).ready(function () {
       saidbar_list.toggleClass('hidePadding');
       nav_link.toggleClass('nav_link_margin');
       second_list.toggleClass('margin_top');
+      userCollapseText.toggle(700);
+      userProfileHeight.toggle(700);
     });
   }
 
